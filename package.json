@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "build": "npm-run-all .bootstrap .build-scrapers",
+    ".bootstrap": "lerna bootstrap",
+    ".build-scrapers": "lerna --scope=@scrapers/* exec -- npm run build"
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4",
+    "npm-run-all": "^4.1.5"
+  }
+}
