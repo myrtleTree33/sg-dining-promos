@@ -10,7 +10,7 @@ import { logger } from './utils/logger';
  * @param {*} param0
  */
 export const scrapeBurpple = async ({ onResults }) => {
-  let page = 900;
+  let page = 0;
 
   while (true) {
     try {
