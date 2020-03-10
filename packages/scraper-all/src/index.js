@@ -1,6 +1,5 @@
 import { logger } from './utils/logger';
-import { runExtract } from './providers/all/extract';
-import { runLoad } from './providers/all/load';
+import { AllScraper } from './providers/all/all';
 
 const {} = process.env;
 
@@ -10,5 +9,5 @@ logger.info('Starting batch jobs..');
 
 // Run ETL jobs in parallel
 (async () => {
-  await Promise.all([runExtract(), runTransform(), runLoad()]);
+  await Promise.all([AllScraper.extract(), AllScraper.transform(), AllScraper.load()]);
 })();
