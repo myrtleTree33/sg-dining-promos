@@ -18,7 +18,7 @@
     ".watch-run": "nodemon --delay 2.5 --exec npm run .run-app"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "cloudscraper": "^4.6.0",
     "convert-time": "^0.3.0",
